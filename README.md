@@ -1,6 +1,6 @@
 # Other
 
---- Projects ---
+--- Java Intellij IDEA Projects ---
 
 1) hw2 Question 2 -> Design Patterns Factory Method Project >> P4
 
