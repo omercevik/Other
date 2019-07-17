@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<table class="table table-striped" style="width:94%;margin-top:8%">
+    <tr>
+        <th>
+            <input type="button"
+                   class="btn btn-block btn-primary"
+                   style="width:30%"
+                   value="Listele"
+                   onclick="location.href='@Url.Action("Index2", "Home" )'" />
+        </th>
+        <th>
+            <input type="button"
+                   class="btn btn-block btn-primary"
+                   style="width:110%"
+                   value="Yeni İlaç Ekle"
+                   onclick="location.href='@Url.Action("Index3", "Home" )'" />
+        </th>
+    </tr>
+</table>
+
+<table class="table table-striped" style="width:94%;margin-top:2%">
+    <tr>
+        <th>Id</th>
+        <th>İlaç İsmi</th>
+        <th>İlaç Birimi</th>
+        <th>İlaç Miktarı</th>
+        <th>Son Kullanma Tarihi</th>
+        <th></th>
+    </tr>
+</table>

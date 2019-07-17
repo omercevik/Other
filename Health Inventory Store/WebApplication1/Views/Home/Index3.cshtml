@@ -1,0 +1,70 @@
+﻿@model WebApplication1.Models.MedicineViewModel
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<table class="table table-striped" style="width:94%;margin-top:8%">
+    <tr>
+        <th>
+            <input type="button"
+                   class="btn btn-block btn-primary"
+                   style="width:30%"
+                   value="Listele"
+                   onclick="location.href='@Url.Action("Index2", "Home" )'" />
+        </th>
+        <th>
+            <input type="button"
+                   class="btn btn-block btn-primary"
+                   style="width:130%"
+                   value="Yeni İlaç Ekle"
+                   onclick="location.href='@Url.Action("Index3", "Home" )'" />
+        </th>
+    </tr>
+</table>
+
+<table class="table table-striped" style="width:94%;margin-top:2%">
+    <tr>
+        <th>İlaç İsmi</th>
+        <th>İlaç Birimi</th>
+        <th>İlaç Miktarı</th>
+        <th>Son Kullanma Tarihi</th>
+        <th></th>
+    </tr>
+        @using (Html.BeginForm("SaveRecord", "Home", new { model = Model }, FormMethod.Post))
+        {
+                <tr>
+                    <th>
+                        @Html.TextBoxFor(model => model.MedicineName, new { @class = "form-control", @placeholder = "İlaç İsmi" })
+                    </th>
+                    <th>
+                        @Html.DropDownListFor(model => model.MedicineUnit, new SelectList(new List<string>() {"Hap", "Kutu","Şurup", "Tablet" }),"İlaç Birimi", new { @class = "form-control" })
+                    </th>
+                    <th>
+                        <input class="form-control single-line" data-val="true" data-val-number="The field MedicineCount must be a number." 
+                               data-val-required="MedicineCount alanı gereklidir." id="MedicineCount" name="MedicineCount" type="number" value="">
+                    </th>
+                    <th>
+                        @Html.TextBoxFor(model => model.MedicineDate,new{ @class = "form-control datepicker", @placeholder = "GG-AA-YYYY" })
+
+                        <link href="~/Content/themes/base/jquery-ui.min.css" rel="stylesheet" />
+                        @section scripts
+{
+                            <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+                            <script>
+                                $(function () {
+                                    $(".datepicker").datepicker(
+                                        {
+                                            dateFormat : "dd-mm-yy"
+                                        });
+                                });
+                            </script>
+                        }
+                    </th>
+                    <th>
+                        <input type="submit" value="Ekle" class="btn btn-block btn-primary" />
+                    </th>
+                </tr>
+        }
+        <tr></tr>
+</table>

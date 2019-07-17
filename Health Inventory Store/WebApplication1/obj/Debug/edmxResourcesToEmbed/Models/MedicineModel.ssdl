@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SaglikDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MedicineTable">
+    <Key>
+      <PropertyRef Name="MedicineId" />
+    </Key>
+    <Property Name="MedicineId" Type="int" Nullable="false" />
+    <Property Name="MedicineName" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="MedicineUnit" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="MedicineCount" Type="int" Nullable="false" />
+    <Property Name="MedicineDate" Type="datetime" Nullable="false" />
+    <Property Name="IsDeleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="SaglikDBModelStoreContainer">
+    <EntitySet Name="MedicineTable" EntityType="Self.MedicineTable" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

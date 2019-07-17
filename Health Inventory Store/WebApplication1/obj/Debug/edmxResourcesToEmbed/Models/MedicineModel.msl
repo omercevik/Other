@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SaglikDBModelStoreContainer" CdmEntityContainer="SaglikDBEntities1">
+    <EntitySetMapping Name="MedicineTables">
+      <EntityTypeMapping TypeName="SaglikDBModel.MedicineTable">
+        <MappingFragment StoreEntitySet="MedicineTable">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="MedicineDate" ColumnName="MedicineDate" />
+          <ScalarProperty Name="MedicineCount" ColumnName="MedicineCount" />
+          <ScalarProperty Name="MedicineUnit" ColumnName="MedicineUnit" />
+          <ScalarProperty Name="MedicineName" ColumnName="MedicineName" />
+          <ScalarProperty Name="MedicineId" ColumnName="MedicineId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
