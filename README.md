@@ -3,10 +3,10 @@
 
 --- Java Intellij IDEA Projects ---
 
-1) hw2 Question 2 -> Design Patterns Factory Method Project >> P4
+1) hw2 Question 2 -> Military Method Design with Factory Method Design Pattern >> P4
 
-2) hw2 Question 3.1 -> Design Patterns Factory Method Project >> P6
+2) hw2 Question 3.1 -> TPX Airplane Model Design with Factory Method Design Pattern >> P6
 
-3) hw2 Question 3.2 & 3.3 -> Design Patterns Abstract Factory Project >> P7
+3) hw2 Question 3.2 & 3.3 -> TPX Airplane Model Design with Abstract Factory Design Pattern >> P7
 
-4) hw3 Question 1 -> Design Patterns Adapter Project >> P9
+4) hw3 Question 1 -> Credit Card Payment System with Adapter Design Pattern >> P9
