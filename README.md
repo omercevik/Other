@@ -26,3 +26,5 @@ Working Operating System:
     Microsoft Visual Studio 2017
     
 5) Health Inventory Store -> C# ASP.NET MVC Health Inventory Store Web Program
+
+6) FindMatchCharacters.py -> Finds Matching Characters in Two Lists with O(m + n) Time Complexity.
