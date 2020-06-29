@@ -1,0 +1,5 @@
+<GTU Moodle User Name>
+<GTU Moodle Password>
+<Sender Mail Address>
+<Sender Mail Password>
+<Receiver Mail Address>
