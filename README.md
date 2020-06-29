@@ -18,3 +18,9 @@
 8) Tester -> Java Embedded Device Tester with Serial Communication Desktop Application Eclipse SWT
 
 9) Moodle Bot -> Python Selenium Gebze Technical University Moodle System Bot Online People Informer
+
+        You must change the paths at 16. and 76. lines.
+        You can modify online people in list at 37. line.
+        You can run at background using command: nohup python3 moodle.py &
+         
+        
