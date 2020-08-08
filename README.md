@@ -23,7 +23,7 @@
         You can modify online people in list at 37. line.
         You can run at background using command: nohup python3 moodle.py &
          
-10) example.c -> String to Integer Recursive & Iterative with Some Rules in C
+10) String to Integer -> String to Integer Recursive & Iterative with Some Rules in C
     
          gcc -c -Wall -pedantic example.c
          gcc example.o -o example
